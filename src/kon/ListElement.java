@@ -60,7 +60,26 @@ public class ListElement
 		}
 	}
 	
-	public 
+	public ListElement getElement(int index)
+	{
+		ListElement result = new ListElement();
+		
+		if(index < 0 || index >= length)
+		{
+			result = null;
+		}
+		
+		else 
+		{
+			result = head;
+			for(int i = 0; i <= index; i++)
+			{
+				result = result.getNext();
+			}
+		}
+		
+		return result;
+	}
 	
 	
 }
