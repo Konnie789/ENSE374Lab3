@@ -109,4 +109,24 @@ public class ListElement
 		}
 		
 		return index;
+	}
+	
+	public void printList()
+	{
+		ListElement temp = new ListElement();
+		head = temp;
+		
+		if(length == 0)
+		{
+			System.out.println("Empty List");
+		}
+		
+		else 
+		{	
+			for(int i = 0; i <= length; i++)
+			{
+				System.out.println("Element selected in this List to print is : " + temp.getData());
+			}
+		}
+	}
 }
