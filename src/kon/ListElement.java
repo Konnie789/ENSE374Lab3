@@ -11,6 +11,8 @@ public class ListElement
 	public Listelement()
 	{
 		this.data = 0;
+		this.length = 0;
+		this.head = null;
 		this.next = null;
 	}
 	
@@ -41,7 +43,7 @@ public class ListElement
 	
 	public void addElement(ListElement le)
 	{
-		
+
 	}
 	
 	
