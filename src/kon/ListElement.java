@@ -56,7 +56,7 @@ public class ListElement
 			{
 				addToArray = i;
 			}
-			length++;
+			length = length + 1;
 		}
 	}
 	
@@ -81,5 +81,32 @@ public class ListElement
 		return result;
 	}
 	
-	
+	public ListElement deleteElement(int index)
+	{
+		ListElement temp =   new ListElement();
+		ListElement result = new ListElement();
+		
+		if(index < 0 || index >= length)
+		{
+			result = null;
+		}
+		
+		if(index == 0)
+		{
+			head = head.getNext();
+			length = length - 1;
+		}
+		
+		else 
+		{
+			for(int i = 0; i <= length; i++)
+			{
+				temp = temp.getNext();
+			}
+			
+			temp.setNext(temp.getNext());
+			length = length - 1;
+		}
+		
+		return index;
 }
