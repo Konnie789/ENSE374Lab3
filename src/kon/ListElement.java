@@ -3,7 +3,10 @@ package kon;
 public class ListElement
 {
 	private int data;
+	private int length;
+	private ListElement head;
 	private ListElement next;
+	
 	
 	public Listelement()
 	{
