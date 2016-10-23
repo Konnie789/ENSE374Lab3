@@ -43,7 +43,21 @@ public class ListElement
 	
 	public void addElement(ListElement le)
 	{
-
+		listElement addToArray = new listElement();
+		
+		if(this.head == null)
+		{
+			this.head = le;
+		}
+		
+		else 
+		{
+			for(ListElement i = head; i.getNext() != null; i = i.getNext())
+			{
+				addToArray = i;
+			}
+			length++;
+		}
 	}
 	
 	
