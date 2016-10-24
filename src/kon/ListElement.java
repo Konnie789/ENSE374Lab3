@@ -129,4 +129,37 @@ public class ListElement
 			}
 		}
 	}
+	
+	public static void main(String[] args)
+	{
+		Scanner in = new Scanner(System.in);
+		int input;
+		int dataInput;
+		ListElement Element = new ListElement(); 
+
+		boolean check = true;
+		
+		do 
+		{
+			System.out.println("What would you like to do?" + '\n' + 
+				   "1. Add an Element" + '\n' + 
+				   "2. Retrive a Node" + '\n' +
+				   "3. Delete a Node"  + '\n' + 
+				   "4. Print the List" + '\n' +
+				   "5. Exit");
+				
+			input = in.nextInt();
+			
+			switch(check)
+			{
+					case 1:
+					System.out.println("Enter value");
+					dataInput = in.getnext();
+					ListElement.addElement(dataInput);
+					break;
+					
+					
+		}
+	}
+		
 }
